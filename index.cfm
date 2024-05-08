@@ -12,6 +12,21 @@
             <td>#result.id#</td>
             <td>#result.task#</td>
             <td>#result.taskStatus#</td>
+            <td>
+                <a href="editTodo.cfm?todo_id=#result.id#">
+                    <button>
+                        Edit
+                    </button>
+                </a>
+            </td>
+
+            <td>
+                <a href="deleteTodo.cfm?todo_id=#result.id#">
+                    <button>
+                        Delete
+                    </button>
+                </a>
+            </td>
         </tr>
     </cfoutput>
 </table>
