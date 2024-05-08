@@ -30,6 +30,14 @@ component {
         )
     }
 
+    
+    public void function deleteTodo(id) {
+        queryExecute(sql: "DELETE FROM todo WHERE id = ?",
+        params = [{value: id, cfsqltype: "cf_sql_integer"}],
+        options: {datasource="todo"}
+        )
+    }
+
 
 
 }
